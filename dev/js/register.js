@@ -22,8 +22,9 @@ $(function() {
             var name = $("#name").val();
             var phone = $("#phone").val();
             var email = $("#email").val();
-            var instt = $("#institution").val();
             var parentage = $("#parentage").val();
+            var age = $("#age").val();
+            var instt = $("#institution").val();
             var academic = $("#academic").val();
             var address = $("#address").val();
 
@@ -39,8 +40,9 @@ $(function() {
                     name: name,
                     phone: phone,
                     email: email,
-                    instt: instt,
                     parentage: parentage,
+                    age: age,
+                    instt: instt,
                     academic: academic,
                     address: address
                 },

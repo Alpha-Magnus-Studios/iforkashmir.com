@@ -1,3 +1,12 @@
+/**
+ * Innovation Forum Kashmir
+ * https://www.iforkashmir.com
+ * 
+ * Designed and developed by
+ * Alpha Magnus Studios
+ * https://www.alphamstudios.com
+ */
+
 function header_top() {
 	document.write(`<!-- header-top -->
 	<div class="header-top">
@@ -26,8 +35,8 @@ function header_top() {
                         </a>
 					</li>
 					<li>
-					   <a href="tell:+917006708293">
-						<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(+91) 7006 708 293</li>
+					   <a href="tell:+919797757234">
+						<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(+91) 9797 757 234</li>
 						</a>
 				</ul>
 			</div>
@@ -46,7 +55,16 @@ function navbar(page_id) {
 	<li> <a href="gallery.html"` + ((page_id == "gallery") ? 'class="active"' : '') + `>Gallery</a></li>
 	<li> <a href="about.html"` + ((page_id == "about") ? 'class="active"' : '') + `>About</a></li>
 	<li><a href="register.html"` + ((page_id == "register") ? 'class="active"' : '') + `>Register</a></li>
-	<li><a href="message.html"` + ((page_id == "message") ? 'class="active"' : '') + `>Message</a></li>	
+	
+	<li class="dropdown">
+                    <a href="#" ` + ((page_id == "message") ? ' class="active"' : '') + ` class="dropdown-toggle" data-toggle="dropdown">Messages <b class="caret"></b></a>
+                    <ul class="dropdown-menu agile_short_dropdown">
+                        <li><a href="message.html">Prof Saad - Head, IIED Centre </a></li>
+                        <li><a class="messages-link" href="#">Innovator 1</a></li>
+                        <li><a class="messages-link" href="#">Innovator 2</a></li>
+                        <li><a class="messages-link" href="#">Innovator 3</a></li>
+                    </ul>
+                </li>
 	<li> <a href="contact.html"` + ((page_id == "contact") ? 'class="active"' : '') + `>Contact</a></li>
 	`)
 }

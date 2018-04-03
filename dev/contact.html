@@ -21,7 +21,7 @@
 	<!-- //Custom Theme files -->
 	<!-- fonts -->
 	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
-	    rel='stylesheet' type='text/css'>
+	 rel='stylesheet' type='text/css'>
 	<link href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
 	<!-- //fonts -->
 	<!-- js -->
@@ -61,10 +61,10 @@
 				<div class="w3ls-logo">
 					<h1>
 						<a href="index.html">INNOVATION FORUM OF KASHMIR</a>
-							<br>
-							<a href="http://nitsri.ac.in" target="_blank">
-								<small>National Institute of Technology, Srinagar</small>
-							
+						<br>
+						<a href="http://nitsri.ac.in" target="_blank">
+							<small>National Institute of Technology, Srinagar</small>
+
 							<span> </span>
 						</a>
 					</h1>
@@ -114,6 +114,11 @@
 					<h4>Phone :</h4>
 					<p>
 						<script>
+							call("+91", "9797", "757234")
+						</script>
+					</p>
+					<p>
+						<script>
 							call("+91", "7006", "708293")
 						</script>
 					</p>
@@ -149,7 +154,7 @@
 						<br>
 					</div>
 					<div class="col-md-8 col-md-offset-2">
-						<form name="sentMessage" id="contactForm" novalidate >
+						<form name="sentMessage" id="contactForm" novalidate>
 							<div id="success"></div>
 							<div class="row">
 								<div class="col-md-6">
@@ -170,14 +175,16 @@
 								<p class="help-block text-danger"></p>
 							</div>
 							<div style="width:197.6px;margin:auto">
-							<div class="g-recaptcha" style="margin:auto; transform:scale(0.65);-webkit-transform:scale(0.65);transform-origin:0 0;-webkit-transform-origin:0 0;" data-sitekey="6Lcn9k8UAAAAALqQBAKl5tejtRdYY6ONTf7JwmkR" data-callback="enableBtn"></div>
-						    </div>
+								<div class="g-recaptcha" style="margin:auto; transform:scale(0.65);-webkit-transform:scale(0.65);transform-origin:0 0;-webkit-transform-origin:0 0;"
+								 data-sitekey="6Lcn9k8UAAAAALqQBAKl5tejtRdYY6ONTf7JwmkR" data-callback="enableBtn"></div>
+							</div>
 							<button type="submit" class="btn btn-default btn-lg" style="" id="submit">Send Message</button>
 						</form>
 						<script>
-						document.getElementById("submit").disabled = true;
-						function enableBtn(){
-							document.getElementById("submit").disabled = false;}
+							document.getElementById("submit").disabled = true;
+							function enableBtn() {
+								document.getElementById("submit").disabled = false;
+							}
 						</script>
 
 					</div>

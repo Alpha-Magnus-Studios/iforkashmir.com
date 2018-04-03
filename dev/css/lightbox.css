@@ -1,3 +1,12 @@
+/**
+ * Innovation Forum Kashmir
+ * https://www.iforkashmir.com
+ * 
+ * Designed and developed by
+ * Alpha Magnus Studios
+ * https://www.alphamstudios.com
+ */
+
 /* Preload images */
 body:after {
   content: url(../images/close.png) url(../images/loading.gif) url(../images/prev.png) url(../images/next.png);

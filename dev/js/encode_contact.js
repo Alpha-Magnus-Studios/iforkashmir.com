@@ -1,11 +1,13 @@
-/*
-Link for email, call, whatsapp
-check parameters
-Text is also written besides giving the link
+/**
+ * Innovation Forum Kashmir
+ * https://www.iforkashmir.com
+ * 
+ * Designed and developed by
+ * Alpha Magnus Studios
+ * https://www.alphamstudios.com
+ */
 
-(c) Moin Khan, Alpha Magnus Studios
-  https://www.alphamstudios.com
-*/
+
 function email(id,dom,ext){
     document.write('<a href="mailto:'+id+'@'+dom+'.'+ext+'"style="text-decoration:none;color:inherit;">'+' '+id+'@'+dom+'.'+ext+'</a>');
     }

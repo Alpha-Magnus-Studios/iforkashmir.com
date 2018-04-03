@@ -1,6 +1,13 @@
-/*
- * (c) Afaan Bilal
+/**
+ * Innovation Forum Kashmir
+ * https://www.iforkashmir.com
+ * 
+ * Designed and developed by
+ * Alpha Magnus Studios
+ * https://www.alphamstudios.com
  */
+
+
 $(function() {
 
     $("input,textarea").jqBootstrapValidation({

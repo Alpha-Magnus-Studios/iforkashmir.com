@@ -48,6 +48,8 @@ section, footer, nav {
   }
   .tile h3, .tile p, .tile a {
     padding: 0 20px;
+    text-align:justify;
+    text-justify: auto;
   }
   .tile img {
     max-height: 130px;

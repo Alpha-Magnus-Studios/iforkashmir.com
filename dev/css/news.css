@@ -19,11 +19,19 @@ section, footer, nav {
     margin: 0;
   }
   .tile {
-    width: 250px;
+    width: 33.33333%;
     height: 400px;
-    margin: 4em;
+    margin: auto;
+    margin-top:50px;
     position: relative;
     float: left;
+  }
+
+  @media screen and (max-width: 993px) {
+    .tile {
+      width: 100%;
+      
+    }
   }
   .tile .front, .tile .back {
     display: block;

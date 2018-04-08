@@ -90,9 +90,7 @@ function footer() {
 					</div>
 
 					<div class="copyright">
-						<p> &copy; ` +
-		new Date().getFullYear() +
-		` IFK. All Rights Reserved. | Designed by <a href="https://www.alphamstudios.com" target="_blank">Alpha Magnus Studios</a>
+						<p> &copy; ` + new Date().getFullYear() + ` Innovation Forum Kashmir | Designed by <a href="https://www.alphamstudios.com" style="color:#10c7bf;" target="_blank">Alpha Magnus Studios</a>
 					</p>
 					</div>
 				</div>

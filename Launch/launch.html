@@ -6,7 +6,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>Innovation Forum of Kashmir</title>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link href="img/favicon.ico" rel="icon" type="image/ico" />	
+	<link href="img/favicon.ico" rel="icon" type="image/ico" />
 	<!-- /Font Awesome css  4.5.0 -->
 	<link rel="stylesheet" href="fonts/site-font/fonts.css">
 	<!-- /Generate eot fonts css in Folder=fonts/site-font/fonts.css-->
@@ -191,17 +191,29 @@
 														var timeleft = 15;
 														var downloadTimer = setInterval(function () {
 															timeleft--;
-															document.getElementById("countdowntimer").textContent = timeleft;
+															display = timeleft;
+															if (timeleft == 2) display = "Here"
+															if (timeleft == 1) display = "We"
+															if (timeleft == 0) display = "Go"
+															document.getElementById("countdowntimer").textContent = display;
 															if (timeleft <= 0)
 																clearInterval(downloadTimer);
 														}, 1000);
+
 														setTimeout(function () {
-															window.location.href = "../IFK/index.html";
-														}, 15400);
-														
+															$(document).ready(function () {
+																$("body").fadeOut(4000, function () {
+																	window.location.href = "../IFK/index.html";
+																})
+															});
+
+
+														}, 16000);
+
 													}
-													
+
 												</script>
+
 
 
 
@@ -239,7 +251,8 @@
 
 						<footer class="copyright">
 							<p>&copy; 2018
-								<a href="http://www.alphamstudios.com" target="_blank">Alpha Magnus Studios</a></p>
+								<a href="http://www.alphamstudios.com" target="_blank">Alpha Magnus Studios</a>
+							</p>
 						</footer>
 					</div>
 				</div>

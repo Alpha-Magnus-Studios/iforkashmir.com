@@ -49,14 +49,24 @@
 			});
 		});
 	</script>
+	
 	<script src="js/menu_jquery.js"></script>
 	<!-- pop-up -->
 
 	<script src="js/ams-functions.js"></script>
 	<!-- //js -->
+	<script>
+			$(document).ready(function(){
+			/*! Fades in whole page on load */
+			$('body').css('display', 'none');
+			$('body').fadeIn(4000);
+			}); 
+			</script>
 </head>
 
+
 <body>
+			
 	<script>
 		header_top();
 	</script>

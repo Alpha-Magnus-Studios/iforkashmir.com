@@ -1,32 +1,7 @@
-/*
-Luck - Resposive Coming Soon Page
-Author: ProwebTheme
-Version: 1.0
-Email: Masudzakaria2@gmail.com
-*/
 
 @charset "utf-8";
-
-/*===================================================*/
-/*
-[Table Of Contents]
-----------------------
-  1.RESET.
-  2.COMMON CUSTOM STYLE.
-  3.TYPOGRAPHY.
-  4.HEADER WELCOME SECTION.
-  5.ABOUT US SECTION.
-  6.SERVICES SECTION.
-  7.CONTACT US. 
-  7.FOOTER SECTION. 
-  8.PRELODER.
-  
-*/
-/*************************************************************
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-............................ RESET ......................
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-*************************************************************/
+html{
+}
 h1,
 h2,
 h3,
@@ -62,7 +37,7 @@ ul {
 ..................... COMMON CUSTOM STYLE ......................
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 *************************************************************/
-body{color:#fff;line-height: 25px;background: #0f0a09 none repeat scroll 0 0 !important;}
+body{color:#fff;line-height: 25px;background: #ddd0d0e8 none repeat scroll 0 0 !important;}
 #ascrail2001{display:none !important;}
 .inner-border-box, .box-shap, .nav-wrapper, .color-warpper, .socail-icon-warpper, .copyright{position: fixed;}
 body, .welcome-section, .sparator-main, .sparator, .sparator-border, .welcome-text h1, .subscribe-fild .email-file, .welcome-text, #count-down-wrapper ul li, .main-wrapper, .main-page-content, .subscribe-btn, .navmenu, .service-title{

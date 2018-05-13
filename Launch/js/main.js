@@ -73,7 +73,7 @@ function animatedTab(){
 	
 	function countDown(){
 		$("#count-down-wrapper").countdown({
-			date: "13 May 2018 12:00:00", // Change this to your desired date to countdown to
+			date: "13 May 2018 23:00:00", // Change this to your desired date to countdown to
 			format: "on"
 		});
 	} 

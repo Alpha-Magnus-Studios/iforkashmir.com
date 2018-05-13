@@ -10,7 +10,6 @@
 	<!-- /Font Awesome css  4.5.0 -->
 	<link rel="stylesheet" href="fonts/site-font/fonts.css">
 	<!-- /Generate eot fonts css in Folder=fonts/site-font/fonts.css-->
-
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- / Animate css Version - 3.5.1 -->
 	<link rel="stylesheet" href="css/navmenu.css">
@@ -160,7 +159,7 @@
 												<span>please</span> Stand By</h1>
 										</div>
 										<div id="counter" class="welcome-text" style="display:none">
-											<h1>
+											<h1 style="font-family:Verdana">
 												<span id="countdowntimer" style="font-size:4em;">15</span>
 											</h1>
 										</div>
@@ -187,22 +186,35 @@
 														document.getElementById("counter").style.display = "block";
 														document.getElementById("button").style.display = "none";
 														var x = document.getElementById("myAudio");
+														var el = document.getElementById("countdowntimer");
 														x.play();
 														var timeleft = 15;
 														var downloadTimer = setInterval(function () {
 															timeleft--;
 															display = timeleft;
+															if (timeleft == 10) {
+																display = "Designed"
+																el.style.fontSize = "84px";
+																el.style.color = "white"
+															}
+															if (timeleft == 9) display = "by"
+															if (timeleft == 8) display = '<img style="width:380px;" src="AMS-white.png">'
+															if (timeleft == 7) display = '<img style="width:380px;" src="AMS-white.png">'
+															if (timeleft == 6) {
+																el.style.fontSize = "4em";
+																el.style.color = "yellow"
+															}
 															if (timeleft == 2) display = "Here"
 															if (timeleft == 1) display = "We"
-															if (timeleft == 0) display = "Go"
-															document.getElementById("countdowntimer").textContent = display;
+															if (timeleft == 0) display = "Go!"
+															el.innerHTML = display;
 															if (timeleft <= 0)
 																clearInterval(downloadTimer);
 														}, 1000);
 
 														setTimeout(function () {
 															$(document).ready(function () {
-																$("body").fadeOut(4000, function () {
+																$("body").slideUp(4000, function () {
 																	window.location.href = "../IFK/index.html";
 																})
 															});

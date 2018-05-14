@@ -126,7 +126,7 @@ document.body.addEventListener("mousemove", function (event) {
 });
 
 function createParticle() {
-    var p = new Particle(width / 2, height, 10 + 5 * Math.random(), (1.4 + Math.random() * 0.2) * Math.PI);
+    var p = new Particle(width / 2, height, 15 + 5 * Math.random(), (1.4 + Math.random() * 0.2) * Math.PI);
     p.size = size;
     p.hue = hue;
     p.lightness = 40 + 40 * Math.random();
